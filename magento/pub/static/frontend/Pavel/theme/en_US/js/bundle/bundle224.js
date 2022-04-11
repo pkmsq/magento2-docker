@@ -1,3 +1,0 @@
-require.config({"config": {
-        "jsbuild":{"Klarna_Kp/js/model/debug.js":"/**\n * This file is part of the Klarna KP module\n *\n * (c) Klarna Bank AB (publ)\n *\n * For the full copyright and license information, please view the NOTICE\n * and LICENSE files that were distributed with this source code.\n */\ndefine(\n    [\n        'Klarna_Kp/js/model/config'\n    ],\n    function (config) {\n        'use strict';\n\n        return {\n            /**\n             * Logging the message\n             * @param {String} message\n             */\n            log: function (message) {\n                if (config.debug) {\n                    console.trace();\n                    console.log(message);\n                }\n            }\n        };\n    }\n);\n"}
-}});
